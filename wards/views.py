@@ -1,15 +1,16 @@
 from django.http  import HttpResponse
-from django.shortcuts import render,redirect,get_object_or_404
+from django.shortcuts import render,redirect
+
 
 # Create your views here.
 
 # @login_required(login_url='/login/')
 def awards(request):
-    post = Image.objects.all()
-    return render(request,'awards.html',{"post":post})
+    # post = Image.objects.all()
+    return render(request,'awards.html')
 
 def pics(request):
     pictures = Image.objects.all()
 
-    return render(request, "awards.html", {"pictures": pictures})
+    return render(request,'awards.html', {"pictures": pictures})
 
