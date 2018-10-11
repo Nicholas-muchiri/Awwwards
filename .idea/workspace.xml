@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="36dbb31e-4fd0-4e3d-9fa7-d2bd6dc8ad09" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/wards/Templates/wards.html" beforeDir="false" afterPath="$PROJECT_DIR$/wards/Templates/wards.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wards/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/wards/urls.py" afterDir="false" />
-    </list>
+    <list default="true" id="36dbb31e-4fd0-4e3d-9fa7-d2bd6dc8ad09" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +182,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
