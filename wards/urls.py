@@ -5,4 +5,8 @@ from django.conf.urls.static import static
 
 urlpatterns=[
     url(r'^$',views.awards,name='awards'),
+    url(r'^search/', views.search, name='search'),
+    url(r'^user/(?P<username>\w+)', views.profile, name='profile'),
+    url(r'^signup/$', views.signup, name='signup'),
+    url(r'^edit/',views.edit_profile, name='edit_profile'),
 ]
