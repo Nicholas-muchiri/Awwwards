@@ -30,6 +30,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+LOGIN_REDIRECT_URL='awards'
+LOGOUT_REDIRECT_URL='awards'
 
 # Application definition
 
