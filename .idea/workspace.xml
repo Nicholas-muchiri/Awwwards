@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36dbb31e-4fd0-4e3d-9fa7-d2bd6dc8ad09" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wards/templates/awards.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wards/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wards/templates/navbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wards/templates/search.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Awards/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Awards/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django/contrib/flatpages/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django/contrib/flatpages/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django/template/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django/template/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django/template/smartif.py" beforeDir="false" afterPath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django/template/smartif.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django/utils/timezone.py" beforeDir="false" afterPath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django/utils/timezone.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django/views/debug.py" beforeDir="false" afterPath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django/views/debug.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django/views/defaults.py" beforeDir="false" afterPath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django/views/defaults.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wards/Templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wards/Templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wards/Templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wards/Templates/wards.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wards/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/wards/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wards/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/wards/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wards/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/wards/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wards/templates/awards.html" beforeDir="false" afterPath="$PROJECT_DIR$/wards/templates/awards.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,10 +15,13 @@
     <session id="1940514173">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.15" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -75,7 +61,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wards/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
+            <state relative-caret-position="15">
               <caret line="2" selection-start-line="2" selection-end-line="2" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
@@ -87,7 +73,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Awards/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
+            <state relative-caret-position="315">
               <caret line="22" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="e#640#680#0" expanded="true" />
@@ -99,7 +85,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wards/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
+            <state relative-caret-position="60">
               <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
@@ -111,8 +97,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wards/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+            <state relative-caret-position="495">
+              <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -129,18 +115,14 @@
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wards/templates/awards.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Awards/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1948">
-              <caret line="139" column="35" lean-forward="true" selection-start-line="139" selection-start-column="35" selection-end-line="139" selection-end-column="35" />
+            <state relative-caret-position="2040">
+              <caret line="139" column="35" selection-start-line="139" selection-start-column="35" selection-end-line="139" selection-end-column="35" />
               <folding>
                 <element signature="e#308#317#0" expanded="true" />
               </folding>
@@ -160,7 +142,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
+            <state relative-caret-position="6330">
               <caret line="422" column="1" selection-start-line="422" selection-start-column="1" selection-end-line="422" selection-end-column="1" />
             </state>
           </provider>
@@ -269,11 +251,20 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -282,11 +273,11 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32952693" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.38499185" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.38499185" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32952693" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -332,22 +323,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wards/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
+        <state relative-caret-position="15">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
@@ -355,9 +336,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Awards/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#640#680#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wards/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="60">
           <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
@@ -365,13 +356,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Awards/urls.py">
+    <entry file="file://$PROJECT_DIR$/wards/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#640#680#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="495">
+          <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -383,34 +371,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Awards/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1948">
-          <caret line="139" column="35" lean-forward="true" selection-start-line="139" selection-start-column="35" selection-end-line="139" selection-end-column="35" />
+        <state relative-caret-position="2040">
+          <caret line="139" column="35" selection-start-line="139" selection-start-column="35" selection-end-line="139" selection-end-column="35" />
           <folding>
             <element signature="e#308#317#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wards/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/static/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+        <state relative-caret-position="240">
+          <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
+        <state relative-caret-position="6330">
           <caret line="422" column="1" selection-start-line="422" selection-start-column="1" selection-end-line="422" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wards/templates/awards.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
