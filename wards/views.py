@@ -8,15 +8,11 @@ from django.utils.encoding import force_bytes, force_text
 
 # Create your views here.
 
-@login_required(login_url='/login/')
+@login_required(login_url='/accounts/login/')
 def awards(request):
-    # post = Image.objects.all()
-    return render(request,'awards.html')
+    projects = Project.objects.all()
 
-def pics(request):
-    pictures = Image.objects.all()
-
-    return render(request,'awards.html', {"pictures": pictures})
+    return render(request,'awards.html', {"projects": projects})
 
 def profile(request, username):
     profile = User.objects.get(username=username)
@@ -64,6 +60,7 @@ def edit_profile(request):
         if form.is_valid():
             edit = form.save(commit=False)
             edit.user = request.user
+            edit.Profile = request.user.profile
             edit.save()
             return redirect('edit_profile')
     else:
