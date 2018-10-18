@@ -16,7 +16,7 @@ class Project(models.Model):
 
     @classmethod
     def search_by_projects(cls,search_term):
-        project = cls.objects.filter(profile__name__icontains=search_term)
+        project = cls.objects.filter(project_name__name__icontains=search_term)
         return project
 
     @classmethod

@@ -27,12 +27,12 @@ def profile(request, username):
     return render(request, 'profile/profile.html', {'title':title, 'profile':profile, 'profile_details':profile_details, 'projects':projects})
 
 def search(request):
-    if 'search' in request.GET and request.GET['search']:
-        search_term = request.GET.get('search')
-        profiles = Profile.search_profile(search_term)
+    if 'project_name' in request.GET and request.GET['project_name']:
+        search_term = request.GET.get('project_name')
+        projects = Project.search_by_projects(search_term)
         message = f'{search_term}'
 
-        return render(request, 'search.html',{'message':message, 'profiles':profiles})
+        return render(request, 'search.html',{'message':message, 'projects':projects})
     else:
         message = 'Enter term to search'
         return render(request, 'search.html', {'message':message})
