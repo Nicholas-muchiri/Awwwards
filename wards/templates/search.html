@@ -7,7 +7,7 @@
         </div>
     </div>
     <div class="row">
-        <!--{% if profiles %}-->
+        {% if projects %}
             {% for project in projects %}
             <div class="col-md-3 home-images search-results">
                 <h1>{{project.project_name}}</h1>
@@ -18,7 +18,7 @@
                 <!--<img src="/static/img/avatar.png" alt="avatar">-->
                 <!--{% endif %}-->
                 <!--<p class="username">{{profile.user.username}} </p>-->
-                <p><a class="btn btn-primary" href="{% url 'search' username=profile.user.username %}">View Profile</a></p>
+                <p><a class="btn btn-primary" href="{% url 'search' %}">View Profile</a></p>
             <!--</div>-->
             {% endfor %}
         {% else %}
