@@ -3,7 +3,7 @@ from django.http import HttpResponse, Http404
 from django.contrib.auth.decorators import login_required
 from .models import Project, Profile
 from django.contrib.auth.models import User
-from .forms import SignupForm, ProjectForm, ProfileForm
+from .forms import SignupForm, ProjectForm, ProfileForm,ContentForm,UsabilityForm,DesignForm
 from django.utils.encoding import force_bytes, force_text
 
 # Create your views here.
@@ -82,5 +82,58 @@ def upload_project(request):
         form = ProjectForm()
 
     return render(request, 'profile/upload_project.html', {'form': form})
+
+
+
+@login_required(login_url='/login')
+def add_usability(request, project_id):
+    project = get_object_or_404(Project, pk=project_id)
+    if request.method == 'POST':
+        form = UsabilityForm(request.POST)
+        if form.is_valid():
+            rate = form.save(commit=False)
+            rate.project = project
+            rate.user_name = request.user
+            rate.profile = request.user.profile
+
+            rate.save()
+        return redirect('awards')
+
+    return render(request, 'awards.html')
+
+@login_required(login_url='/login')
+def add_design(request, project_id):
+    project = get_object_or_404(Project, pk=project_id)
+    if request.method == 'POST':
+        form = DesignForm(request.POST)
+        if form.is_valid():
+            rate = form.save(commit=False)
+            rate.project = project
+            rate.user_name = request.user
+            rate.profile = request.user.profile
+
+            rate.save()
+        return redirect('awards')
+    else:
+        form = DesignForm()
+
+    return render(request, 'awards.html',{'form': form})
+
+
+@login_required(login_url='/login')
+def add_content(request, project_id):
+    project = get_object_or_404(Project, pk=project_id)
+    if request.method == 'POST':
+        form = ContentForm(request.POST)
+        if form.is_valid():
+            rate = form.save(commit=False)
+            rate.project = project
+            rate.user_name = request.user
+            rate.profile = request.user.profile
+
+            rate.save()
+        return redirect('awards')
+
+    return render(request, 'awards.html')
 
 
