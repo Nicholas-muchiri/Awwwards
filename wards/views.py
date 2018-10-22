@@ -10,9 +10,10 @@ from django.utils.encoding import force_bytes, force_text
 
 @login_required(login_url='/accounts/login/')
 def awards(request):
+    form=DesignForm()
     projects = Project.objects.all()
 
-    return render(request,'awards.html', {"projects": projects})
+    return render(request,'awards.html', {"projects": projects, "form":form})
 
 def profile(request, username):
     profile = User.objects.get(username=username)
