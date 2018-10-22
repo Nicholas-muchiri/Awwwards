@@ -1,63 +1,59 @@
-{% extends 'base.html' %}
-{% load bootstrap4 %}
-{% block content %}
+{% extends 'base.html' %} {% load bootstrap4 %} {% block content %}
 
 <h1 class="text-center">Projects</h1>
 <div class="container">
   <div class="row">
-   {% for project in projects %}
+    {% for project in projects %}
 
-      <!--Displaying the projects-->
-      <div class="card col-xs-6 col-sm-6 col-md-6 col-lg-6">
-<div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="{{project.image.url}}" alt="pictures">
-  <div class="card-body">
-    <h5 class="card-title">{{project.project_name}}</h5>
+    <!--Displaying the projects-->
+    <div class="card col-xs-6 col-sm-6 col-md-6 col-lg-6">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="{{project.image.url}}" alt="pictures">
+        <div class="card-body">
+          <h5 class="card-title">{{project.project_name}}</h5>
 
 
 
-      <h5 class="card-title">{{project.project_caption}}</h5>
-    <a href="#" class="btn btn-primary">visit link</a>
-  </div>
-</div>
+          <h5 class="card-title">{{project.project_caption}}</h5>
+          <br>
+          <h4 style="color: black;">Project Ratings</h4>
+          <h5>{{ project.rating.count }} <h5 style="color: green;">Design</h5> average = {{ project.average_design | floatformat }} </h5>
+          <!--<h6 style="color: green;">Comments:</h6> {% for review in project.designrating_set.all %}-->
+          <!--<ul>{{review.comment}}</ul>-->
+          <!--{% endfor %}-->
+          <h5>{{ project.rating.count }} <h5 style="color: green;">Usability</h5> average = {{ project.average_usability | floatformat }} </h5>
+
+          <h5>{{ project.rating.count }} <h5 style="color: green;">Content</h5> average = {{ project.average_content | floatformat }}</h5>
+          <br>
+          <a href="#" class="btn btn-primary">visit link</a>
+        </div>
       </div>
-       <div class="card col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                <!--Rating-->
-        </div>
+    </div>
+    <div class="card col-xs-6 col-sm-6 col-md-6 col-lg-6">
+      <!--Rating-->
+      <h4>Rate By Design</h4>
+
+      <form action="{%url 'add_design' project_id=project.id %}" method="POST">
+        {%csrf_token%} {% bootstrap_form form layout='inline' %}
+        <input type="submit" value="Rate">
+      </form>
+      <h4>Rate By Content</h4>
+      <form action="{%url 'review_content' project_id=project.id %}" method="POST">
+        {%csrf_token%} {% bootstrap_form form layout='inline' %}
+        <input type="submit" value="Rate">
+      </form>
+      <h4>Rate By Usability</h4>
+      <form action="{%url 'review_usability' project_id=project.id %}" method="POST">
+        {%csrf_token%} {% bootstrap_form form layout='inline' %}
+        <input type="submit" value="Rate">
+      </form>
 
 
-        <hr><hr>
-        <div class="col-xs-3 col-sm-6 col-md-4 col-lg-4">
-                    <h4>Rate By Design</h4>
-
-
-
-              <form  action="{%url 'add_design' project_id=project.id %}" method="POST">
-    {%csrf_token%}
-    {% bootstrap_form form layout='inline' %}
-    <input type="submit" value="Rate">
-  </form>
-            <h4>Rate By Content</h4>
-  <form  action="{%url 'review_content' project_id=project.id %}" method="POST">
-    {%csrf_token%}
-    {% bootstrap_form form layout='inline' %}
-    <input type="submit" value="Rate">
-  </form>
-             <h4>Rate By Usability</h4>
-              <form  action="{%url 'review_usability' project_id=project.id %}" method="POST">
-    {%csrf_token%}
-    {% bootstrap_form form layout='inline' %}
-    <input type="submit" value="Rate">
-  </form>
-
-
-        </div>
-
-        <!--End Rating-->
-            </div>
-      {% endfor %}
-
+    </div>
+    {% endfor %}
   </div>
+
+  <!--End Rating-->
 </div>
 
 {% endblock %}
