@@ -47,7 +47,6 @@ def signup(request):
             form = SignupForm(request.POST)
             if form.is_valid():
                 user = form.save(commit=False)
-                user.is_active = False
                 user.save()
             return redirect('awards')
         else:
